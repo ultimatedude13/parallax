@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="In Parallax, every night resets the day. Uncover the truth and find a way to break the loop.">
+  <title>Parallax — Tomorrow Is Out of Reach</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Parallax home">
+      <span class="brand-icon" aria-hidden="true">P</span>
+      <span>PARALLAX</span>
+    </a>
 
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="#story">The story</a>
+      <a href="#experience">Experience</a>
+      <a href="#world">The anomaly</a>
+      <button class="button button-small install-button" type="button">Install the launcher</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="planet" aria-hidden="true"></div>
+      <div class="horizon" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> A sci-fi mystery in development</p>
+        <h1>THE DAY<br>NEVER <span>ENDS.</span></h1>
+        <p class="hero-copy">
+          Every night, time resets to the same day. You remember.
+          Find out why—and stop tomorrow from disappearing.
+        </p>
+        <button class="button install-button" type="button">
+          Install the launcher <span aria-hidden="true">↗</span>
+        </button>
+        <p class="hero-note">The launcher is not available yet.</p>
+      </div>
+
+      <div class="hero-coordinate" aria-hidden="true">
+        <span>LOCAL TIME</span>
+        <strong>23:59:59</strong>
+        <span>DAY 01 // REPEATING</span>
+      </div>
+      <a class="scroll-cue" href="#story" aria-label="Scroll to the story">↓</a>
+    </section>
+
+    <section class="story section-wrap" id="story">
+      <div class="section-label">01 / The day that repeats</div>
+      <div class="story-copy">
+        <p class="eyebrow">You are the only one who remembers</p>
+        <h2>Tomorrow never comes.<br><em>Until you make it.</em></h2>
+        <p>
+          You wake up to the same day. Again. The city follows its usual rhythm,
+          conversations repeat, and every clock counts down to midnight.
+          Then the world resets—and you’re the only one who remembers.
+        </p>
+        <p>
+          <strong>Parallax</strong> is a sci-fi mystery about following the clues,
+          understanding the people trapped in the loop, and discovering what it
+          will take to change the ending.
+        </p>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="section-wrap">
+        <div class="section-label">02 / Each reset reveals more</div>
+        <div class="section-heading">
+          <h2>Same day.<br><em>New possibilities.</em></h2>
+          <p>Every loop is another chance to look closer, ask different questions, and change what happens before midnight.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-number">01</span>
+            <div class="feature-icon" aria-hidden="true">◷</div>
+            <h3>Learn the pattern</h3>
+            <p>Observe the day as it unfolds. People have routines, events have causes, and the details matter.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">02</span>
+            <div class="feature-icon" aria-hidden="true">⌕</div>
+            <h3>Follow the clues</h3>
+            <p>Investigate strange events and connect the fragments that reveal why time keeps resetting.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">03</span>
+            <div class="feature-icon" aria-hidden="true">⟳</div>
+            <h3>Change the day</h3>
+            <p>Use what you remember to make different choices and discover how the day can be altered.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">04</span>
+            <div class="feature-icon" aria-hidden="true">⌁</div>
+            <h3>Break the loop</h3>
+            <p>Uncover the truth behind the anomaly and fight for a tomorrow that lasts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="anomaly" id="world">
+      <div class="anomaly-art" aria-hidden="true">
+        <div class="ring ring-one"></div>
+        <div class="ring ring-two"></div>
+        <div class="anomaly-core"></div>
+        <div class="scan-line"></div>
+      </div>
+      <div class="anomaly-copy">
+        <div class="section-label">03 / The anomaly</div>
+        <h2>Something is<br><em>out of time.</em></h2>
+        <p>
+          The reset is not random. Beneath the familiar streets, something
+          impossible is waiting to be understood. The closer you get, the less
+          certain the next loop becomes.
+        </p>
+        <div class="world-tags">
+          <span>Time loop</span><span>Sci-fi mystery</span><span>One repeating day</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-wrap">
+      <p class="eyebrow">The clock is counting down</p>
+      <h2>When night falls,<br><em>try again.</em></h2>
+      <p>Parallax is in development.</p>
+      <button class="button install-button" type="button">
+        Install the launcher <span aria-hidden="true">↗</span>
+      </button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home">
+      <span class="brand-icon" aria-hidden="true">P</span>
+      <span>PARALLAX</span>
+    </a>
+    <p>Tomorrow is out of reach. For now.</p>
+    <span class="copyright">© <span id="year"></span> Parallax</span>
+  </footer>
+
+  <dialog class="error-dialog" aria-labelledby="error-title">
+    <button class="dialog-close" type="button" aria-label="Close message">×</button>
+    <div class="error-symbol" aria-hidden="true">!</div>
+    <p class="section-label">Launcher unavailable</p>
+    <h2 id="error-title">Error 2: Access denied</h2>
+    <p>The launcher could not be installed. Please try again later.</p>
+    <button class="button dialog-ok" type="button">OK</button>
+  </dialog>
+</body>
+</html>
